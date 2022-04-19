@@ -1,15 +1,3 @@
-<!-- Toolbar -->
-<header class="toolbar" role="banner">
-  <h2 class="logo">Nicholas Coorevits</h2>
-  <nav>
-    <ul class="nav_links">
-      <li><a routerLink="/introduction">Introduction</a></li>
-      <li><a routerLink="/about">About</a></li>
-      <li><a routerLink="/project" class="active">Projects</a></li>
-    </ul>
-  </nav>
-</header>
-
 <!-- main -->
 <div class="content" role="main">
 
@@ -17,10 +5,11 @@
     <p >Op deze pagina staan een aantal projecten die ik zelf of in groep gemaakt heb.</p>
     <p> Klik op een knop voor meer informatie te krijgen</p>
 
-  <div class="btn-group">
-    <button (click)="ToggleTag1()" [ngClass]="{'btn_proj' : ShowProj1}" class="btn-outline-dark bg-white rounded">Requirements Analysis</button>
-    <button (click)="ToggleTag2()" [ngClass]="{'btn_proj' : ShowProj2}" class="btn-outline-dark bg-white rounded">C# WPF</button>
-    <button class="btn-outline-dark bg-white rounded">???</button>
+  <div id="proj">
+    <button (click)="ToggleTag1()" [ngClass]="{'btn_proj' : ShowProj1}" class="btn-outline-dark bg-white">Requirements Analysis</button>
+    <button (click)="ToggleTag2()" [ngClass]="{'btn_proj' : ShowProj2}" class="btn-outline-dark bg-white">C# WPF</button>
+    <button class="btn-outline-dark bg-white">Project PHP</button>
+    <button class="btn-outline-dark bg-white">Cordova App</button>
   </div>
 
   <div *ngIf="ShowProj1" class="content">
@@ -31,19 +20,20 @@
 
     <img src="assets/RA.JPG" alt="c# WPF">
     <h3>Context</h3>
-    <p><span>Voor de projectweek van Requirements Analysis heeft mijn groep de opdracht gekregen
-    om een applicatie te ontwerpen voor mensen met Alzheimer of een dissociatieve stoornis.
-    Voor mensen met deze aandoening is het moeilijk om een overzicht te hebben van hun dag- en weekplanning.
-    Meestal hebben ze al een persoonlijke agenda, maar deze wordt vaak nog op papier ingevuld.
-    Soms loopt het wel eens fout omdat ze sommige dingen vergeten en afspraken met elkaar kunnen overlappen.</span>
+    <p><span>Voor de Requirements Analysis projectweek kreeg mijn groep de opdracht om een applicatie te
+      ontwerpen voor mensen met de ziekte van Alzheimer of een dissociatieve stoornis. Voor mensen met deze
+      stoornis is het moeilijk om een overzicht te hebben van hun dag- en weekplanning. Meestal hebben ze al
+      wel een persoonlijke agenda, maar die is vaak nog op papier ingevuld. Soms gaat het mis omdat ze sommige
+      dingen vergeten en afspraken kunnen elkaar overlappen.
+</span>
     </p>
     <h3>Mijn Bijdrage</h3>
-    <p><span>We hebben in het begin vooral samen gewerkt voor de bestaande projecten te bekijken en hier uit te halen wat er goed uitzag.
-  Na dit zijn we begonnen voor ons eigen project te maken. Ik heb in het begin aan het use case diagram gewerkt. Hierna
-  ben ik vooral bezig geweest met het document van het project.</span>
+    <p><span>In het begin werkten we vooral samen om naar de bestaande projecten te kijken en eruit te halen wat er goed uitzag.
+  Hierna zijn we begonnen met het maken voor ons eigen project. Ik heb in het begin gewerkt aan het use case diagram. Daarna
+  werkte ik vooral aan het projectdocument..</span>
     </p>
     <h3>Bijgeleerd</h3>
-    <p><span>Tijdens dit project heb ik geleerd hoe je het beste begint aan het analyseren van een project.</span>
+    <p><span>Tijdens dit project heb ik geleerd hoe je het beste kunt beginnen met het analyseren van een project.</span>
     </p>
   </div>
 
@@ -51,15 +41,18 @@
     <h2>C# WPF</h2>
     <p>Deze opdracht is op school gemaakt voor het vak van DevOps gegeven door Quinten Desmyter</p>
     <img src="assets/csAPI.JPG" alt="c# WPF">
-    <p><span>Voor deze opdracht heb ik een windows forms gemaakt die zeker met dapper en een micro ORM moest werken.
-    Mijn applicatie gaat de top 10 meest beluisterde liedjes van apple music in België afhalen. deze worden één voor één getoond,
-    hier kan je dan zien van wie het nummer is, de naam van het lied en de album cover. Deze windows form heef 4 knoppen:
-    "Previous" voor naar het vorige nummer te gaan. "Next" voor naar het volgende nummer te gaan.
-    "Save" voor het nummer op te slaan. De opgeslagen nummers komen bij de "Saved Songs" knop in een lijst te staan op een volgende windows forms.</span>
+    <h3>Context</h3>
+    <p><span>Voor deze opdracht heb ik een windows forms gemaakt die moest werken met dapper en een micro ORM zeker.
+    Mijn applicatie gaat de top 10 meest beluisterde liedjes van apple music in België ophalen. deze worden één voor één getoond,
+    hier kan je zien van wie het liedje is, de naam van het liedje en de album cover. Dit windows formulier heeft 4 knoppen:
+    "Vorige" om naar het vorige liedje te gaan. "Volgende" om naar het volgende liedje te gaan.
+    "Opslaan" om het muzieknummer op te slaan. De opgeslagen muzieknummers worden getoond onder de knop "Opgeslagen muzieknummers" op een volgend schermformulier.
+    </span>
+
     </p>
     <h3>Bijgeleerd</h3>
-    <p><span>Door dit project ben ik voor de eerste keer met C# gewerkt. In dit project heb ik ook geleerd hoe
-  een micro ORM en een WPF werkt </span>
+    <p><span>Door dit project heb ik voor het eerst met C# leren werken. In dit project heb ik ook geleerd hoe
+  een micro ORM en een WPF werkt. </span>
     </p>
   </div>
 </div>
