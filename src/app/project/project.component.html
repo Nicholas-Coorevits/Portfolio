@@ -2,14 +2,19 @@
 <div class="content" role="main">
 
   <h2>Projects</h2>
-    <p >Op deze pagina staan een aantal projecten die ik zelf of in groep gemaakt heb.</p>
-    <p> Klik op een knop voor meer informatie te krijgen</p>
+  <p>Op deze pagina staan een aantal projecten die ik zelf of in groep gemaakt heb.</p>
+  <p> Klik op een knop voor meer informatie te krijgen</p>
 
   <div id="proj">
-    <button (click)="ToggleTag1()" [ngClass]="{'btn_proj' : ShowProj1}" class="btn-outline-dark bg-white">Requirements Analysis</button>
-    <button (click)="ToggleTag2()" [ngClass]="{'btn_proj' : ShowProj2}" class="btn-outline-dark bg-white">C# WPF</button>
-    <button class="btn-outline-dark bg-white">Project PHP</button>
-    <button class="btn-outline-dark bg-white">Cordova App</button>
+    <button (click)="ToggleTag1()" [ngClass]="{'btn_proj' : ShowProj1}" class="btn-outline-dark bg-white">Requirements
+      Analysis
+    </button>
+    <button (click)="ToggleTag2()" [ngClass]="{'btn_proj' : ShowProj2}" class="btn-outline-dark bg-white">C# WPF
+    </button>
+    <button (click)="ToggleTag3()" [ngClass]="{'btn_proj' : ShowProj3}" class="btn-outline-dark bg-white">Project PHP
+    </button>
+    <button (click)="ToggleTag4()" [ngClass]="{'btn_proj' : ShowProj4}" class="btn-outline-dark bg-white">Cordova App
+    </button>
   </div>
 
   <div *ngIf="ShowProj1" class="content">
@@ -33,7 +38,8 @@
   werkte ik vooral aan het projectdocument..</span>
     </p>
     <h3>Bijgeleerd</h3>
-    <p><span>Tijdens dit project heb ik geleerd hoe je het beste kunt beginnen met het analyseren van een project.</span>
+    <p>
+      <span>Tijdens dit project heb ik geleerd hoe je het beste kunt beginnen met het analyseren van een project.</span>
     </p>
   </div>
 
@@ -55,4 +61,51 @@
   een micro ORM en een WPF werkt. </span>
     </p>
   </div>
+
+  <div *ngIf="ShowProj3" class="content">
+    <h2>Project PHP</h2>
+    <p>Deze opdracht is op school gemaakt voor het vak van PHP gegeven door Patrick Verhaert, Jordi de Roeck en Michael
+      Cloot</p>
+    <img src="assets/agenda.JPG" alt="Agenda">
+    <h3>Context</h3>
+    <p><span>Dit project gaat verder op de opdracht van requirements analysis en ook met hetzelfde team als requirements analysis.
+      Ik zal de opdracht in het kort nog eens uitleggen. In deze opdracht is het de bedoeling dat wij een applicatie maken voor mensen
+      met alzheimers en/of een dissociatieve stoornis. Deze webapplicatie gaat vooral draaien rond de patiënt.
+    </span>
+    </p>
+
+    <h3>Mijn Bijdrage</h3>
+    <p><span>In dit groepswerk heb ik mij bezig gehouden met het begin te maken voor een agenda waar ze hun dagelijkse routines,taken en afspraken in kunnen plannen
+      en de geassocieerde tabellen in de databank te plaatsen.
+      Hiernaast heb ik ook samen gezeten met iemand anders van mijn groep voor de styling van het project in orde te brengen.
+      Ik ben ook degene die via combell de website heeft gehost.</span>
+    </p>
+
+    <h3>Bijgeleerd</h3>
+    <p><span>Uit dit project heb ik meer ervaring om met een planningsbord te werken om zo te vermijden dat meerdere mensen aan hetzelfde bezig zijn. Als ook
+    heb ik hier uit geleerd om samen aan 1 project te werken met een groep.</span>
+    </p>
+  </div>
+
+  <div *ngIf="ShowProj4" class="content">
+    <h2>Cordova</h2>
+    <p>Deze opdracht is op school gemaakt voor het vak Cordova gegeven door Patrick Verhaert</p>
+    <div class="row">
+      <img class="col-4" src="assets/screenshot-1637437241533.png" alt="artikelen opgehaald via API">
+      <img class="col-4" src="assets/screenshot-1637437313838.png" alt="artikelen opgehaald via API">
+      <img class="col-4" src="assets/screenshot-1637437280326.png" alt="artikelen opgehaald via API">
+    </div>
+    <h3>Context</h3>
+    <p><span>De opdracht van cordova was een applicatie maken voor op de gsm te zetten. Ik heb hier gekozen om een applicatie te maken
+      die een aantal nieuwsartikelen ophaalt via een API. Deze artikelen kan je filteren op genre en op specifieke woorden die in de titel voorkomen.
+      De opdracht moest ook voldoen aan een aantal eisen en de belangerijkste hiervan was voor een plugin
+      in de applicatie bij te plaatsen. De plugin die ik gekozen heb kan connecteren met social media en zo kon ik iets posten via mijn applicatie.</span>
+    </p>
+
+    <h3>Bijgeleerd</h3>
+    <p><span>Bij dit project heb ik voor het eerst kennis gemaakt met het framework material, voorheen gebruikte we altijd bootstrap dus dit
+    was ook eens leuk voor mee te werken.</span>
+    </p>
+  </div>
+
 </div>
