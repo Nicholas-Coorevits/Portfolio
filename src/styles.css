@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-  :host {
+:host {
   margin: 10px;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
@@ -8,6 +8,33 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#about_image {
+  max-width: 50%;
+}
+
+@media screen and (max-width: 650px) {
+  #about_image {
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  #about_list {
+    display: none;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  div #proj {
+    flex-direction: column;
+  }
+
+  img {
+    max-width: 400px;
+  }
 }
 
 
@@ -63,7 +90,6 @@ p {
 }
 
 img {
-  max-width: 400px;
   max-height: 400px;
 }
 
@@ -76,7 +102,7 @@ a:hover {
   transition: all 0.3s ease 0s;
 }
 
-#about_list li, #about_list a{
+#about_list li, #about_list a {
   color: #4a4a4a;
   list-style: none;
 }
@@ -113,14 +139,14 @@ header {
   animation: colors 4s ease-in-out infinite;
 }
 
-@keyframes colors{
-  0%{
+@keyframes colors {
+  0% {
     color: lightsalmon;
   }
   20% {
-   color: salmon;
+    color: salmon;
   }
-  40%{
+  40% {
     color: goldenrod;
   }
   60% {
@@ -139,12 +165,14 @@ header {
   padding: 0 20px;
   margin-left: 20px;
 }
+
 .nav_links li a {
   transition: all 0.3s ease 0s;
 
 }
+
 .nav_links li a:hover {
-  color : goldenrod;
+  color: goldenrod;
 }
 
 .blue {
@@ -164,6 +192,7 @@ header {
   color: white;
   font-weight: 600;
 }
+
 /*END NAV*/
 
 .layout {
@@ -358,20 +387,15 @@ footer a {
 
 
 /* Responsive Styles */
-@media screen and (max-width: 767px) {
-  .card-container > *:not(.circle-link),
-  .terminal {
-    width: 100%;
-  }
 
-  .card:not(.highlight-card) {
-    height: 16px;
-    margin: 8px 0;
-  }
-
-  .card.highlight-card span {
-    margin-left: 72px;
-  }
-
+.card:not(.highlight-card) {
+  height: 16px;
+  margin: 8px 0;
 }
+
+.card.highlight-card span {
+  margin-left: 72px;
+}
+
+
 
