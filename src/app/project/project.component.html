@@ -1,110 +1,257 @@
 <div class="content" role="main">
-
   <h2>Projecten</h2>
-  <p>Op deze pagina staan een aantal projecten die ik zelf of in groep gemaakt heb.</p>
-  <p> Klik op een knop om meer informatie te krijgen</p>
+  <p>
+    Op deze pagina staan een aantal projecten die ik zelf of in groep gemaakt
+    heb.
+  </p>
+  <p>Klik op een knop om meer informatie te krijgen</p>
 
   <div id="proj">
-    <button (click)="ToggleTag1()" [ngClass]="{'btn_proj' : ShowProj1}" class="btn-outline-dark bg-white">Requirements Analysis
+    <button
+      (click)="ToggleTag1()"
+      [ngClass]="{ btn_proj: ShowProj1 }"
+      class="btn-outline-dark bg-white"
+    >
+      Requirements Analysis
     </button>
-    <button (click)="ToggleTag2()" [ngClass]="{'btn_proj' : ShowProj2}" class="btn-outline-dark bg-white">C# WPF
+    <button
+      (click)="ToggleTag2()"
+      [ngClass]="{ btn_proj: ShowProj2 }"
+      class="btn-outline-dark bg-white"
+    >
+      C# WPF
     </button>
-    <button (click)="ToggleTag3()" [ngClass]="{'btn_proj' : ShowProj3}" class="btn-outline-dark bg-white">Project PHP
+    <button
+      (click)="ToggleTag3()"
+      [ngClass]="{ btn_proj: ShowProj3 }"
+      class="btn-outline-dark bg-white"
+    >
+      Project PHP
     </button>
-    <button (click)="ToggleTag4()" [ngClass]="{'btn_proj' : ShowProj4}" class="btn-outline-dark bg-white">Cordova App
+    <button
+      (click)="ToggleTag4()"
+      [ngClass]="{ btn_proj: ShowProj4 }"
+      class="btn-outline-dark bg-white"
+    >
+      Cordova App
     </button>
-    <button (click)="ToggleTag4()" [ngClass]="{'btn_proj' : ShowProj4}" class="btn-outline-dark bg-white">Project 4.0
+    <button
+      (click)="ToggleTag5()"
+      [ngClass]="{ btn_proj: ShowProj5 }"
+      class="btn-outline-dark bg-white"
+    >
+      Project 4.0
     </button>
   </div>
 
   <div *ngIf="ShowProj1" class="content">
     <h2>Requirements Analysis</h2>
 
-    <p>Deze opdracht is op school gemaakt voor het vak van requirements analysis gegeven door Christine Smeets</p>
-    <br>
+    <p>
+      Deze opdracht is op school gemaakt voor het vak van requirements analysis
+      gegeven door Christine Smeets
+    </p>
+    <br />
 
-    <img src="assets/RA.JPG" alt="c# WPF">
+    <img src="assets/RA.JPG" alt="c# WPF" />
     <h3>Context</h3>
-    <p><span>Voor de Requirements Analysis projectweek kreeg mijn groep de opdracht om een applicatie te
-      ontwerpen voor mensen met de ziekte van Alzheimer of een dissociatieve stoornis. Voor mensen met deze
-      stoornis is het moeilijk om een overzicht te hebben van hun dag- en weekplanning. Meestal hebben ze al
-      wel een persoonlijke agenda, maar die is vaak nog op papier ingevuld. Soms gaat het mis omdat ze sommige
-      dingen vergeten en afspraken kunnen elkaar overlappen.
-</span>
+    <p>
+      <span
+        >Voor de Requirements Analysis projectweek kreeg mijn groep de opdracht
+        om een applicatie te ontwerpen voor mensen met de ziekte van Alzheimer
+        of een dissociatieve stoornis. Voor mensen met deze stoornis is het
+        moeilijk om een overzicht te hebben van hun dag- en weekplanning.
+        Meestal hebben ze al wel een persoonlijke agenda, maar die is vaak nog
+        op papier ingevuld. Soms gaat het mis omdat ze sommige dingen vergeten
+        en afspraken kunnen elkaar overlappen.
+      </span>
     </p>
     <h3>Mijn Bijdrage</h3>
-    <p><span>In het begin werkten we vooral samen om naar de bestaande projecten te kijken en eruit te halen wat er goed uitzag.
-  Hierna zijn we begonnen met het maken voor ons eigen project. Ik heb in het begin gewerkt aan het use case diagram. Daarna
-  werkte ik vooral aan het projectdocument.</span>
+    <p>
+      <span
+        >In het begin werkten we vooral samen om naar de bestaande projecten te
+        kijken en eruit te halen wat er goed uitzag. Hierna zijn we begonnen met
+        het maken voor ons eigen project. Ik heb in het begin gewerkt aan het
+        use case diagram. Daarna werkte ik vooral aan het projectdocument.</span
+      >
     </p>
     <h3>Bijgeleerd</h3>
     <p>
-      <span>Tijdens dit project heb ik geleerd hoe je het beste kunt beginnen met het analyseren van een project.</span>
+      <span
+        >Tijdens dit project heb ik geleerd hoe je het beste kunt beginnen met
+        het analyseren van een project.</span
+      >
     </p>
   </div>
 
   <div *ngIf="ShowProj2" class="content">
     <h2>C# WPF</h2>
-    <p>Deze opdracht is op school gemaakt voor het vak van DevOps gegeven door Quinten Desmyter</p>
-    <img src="assets/csAPI.JPG" alt="c# WPF">
+    <p>
+      Deze opdracht is op school gemaakt voor het vak van DevOps gegeven door
+      Quinten Desmyter
+    </p>
+    <img src="assets/csAPI.JPG" alt="c# WPF" />
     <h3>Context</h3>
-    <p><span>Voor deze opdracht heb ik een windows forms gemaakt die moest werken met dapper en een micro ORM zeker.
-    Mijn applicatie gaat de top 10 meest beluisterde liedjes van Apple music in België ophalen. deze worden één voor één getoond,
-    hier kan je zien van wie het liedje is, de naam van het lied en de albumcover. Dit windows formulier heeft 4 knoppen:
-    "Vorige" om naar het vorige liedje te gaan. "Volgende" om naar het volgende liedje te gaan.
-    "Opslaan" om het muzieknummer op te slaan. De opgeslagen muzieknummers worden getoond onder de knop "Opgeslagen muzieknummers" op een volgend schermformulier.
-    </span>
-
+    <p>
+      <span
+        >Voor deze opdracht heb ik een windows forms gemaakt die moest werken
+        met dapper en een micro ORM zeker. Mijn applicatie gaat de top 10 meest
+        beluisterde liedjes van Apple music in België ophalen. deze worden één
+        voor één getoond, hier kan je zien van wie het liedje is, de naam van
+        het lied en de albumcover. Dit windows formulier heeft 4 knoppen:
+        "Vorige" om naar het vorige liedje te gaan. "Volgende" om naar het
+        volgende liedje te gaan. "Opslaan" om het muzieknummer op te slaan. De
+        opgeslagen muzieknummers worden getoond onder de knop "Opgeslagen
+        muzieknummers" op een volgend schermformulier.
+      </span>
     </p>
     <h3>Bijgeleerd</h3>
-    <p><span>Door dit project heb ik voor het eerst met C# leren werken. In dit project heb ik ook geleerd hoe
-  een micro ORM en een WPF werkt. </span>
+    <p>
+      <span
+        >Door dit project heb ik voor het eerst met C# leren werken. In dit
+        project heb ik ook geleerd hoe een micro ORM en een WPF werkt.
+      </span>
     </p>
   </div>
 
   <div *ngIf="ShowProj3" class="content">
     <h2>Project PHP</h2>
-    <p>Deze opdracht is op school gemaakt voor het vak van PHP gegeven door Patrick Verhaert, Jordi de Roeck en Michael
-      Cloot</p>
-    <img src="assets/agenda.JPG" alt="Agenda">
+    <p>
+      Deze opdracht is op school gemaakt voor het vak van PHP gegeven door
+      Patrick Verhaert, Jordi de Roeck en Michael Cloot
+    </p>
+    <img src="assets/agenda.JPG" alt="Agenda" />
     <h3>Context</h3>
-    <p><span>Dit project gaat verder op de opdracht van requirements analysis en ook met hetzelfde team als requirements analysis.
-      Ik zal de opdracht in het kort nog eens uitleggen. In deze opdracht is het de bedoeling dat wij een applicatie maken voor mensen
-      met alzheimers en/of een dissociatieve stoornis. Deze webapplicatie gaat vooral draaien rond de patiënt.
-    </span>
+    <p>
+      <span
+        >Dit project gaat verder op de opdracht van requirements analysis en ook
+        met hetzelfde team als requirements analysis. Ik zal de opdracht in het
+        kort nog eens uitleggen. In deze opdracht is het de bedoeling dat wij
+        een applicatie maken voor mensen met alzheimers en/of een dissociatieve
+        stoornis. Deze webapplicatie gaat vooral draaien rond de patiënt.
+      </span>
     </p>
 
     <h3>Mijn Bijdrage</h3>
-    <p><span>In dit groepswerk heb ik mij bezig gehouden met het begin te maken voor een agenda waar ze hun dagelijkse routines, taken en afspraken in kunnen plannen
-      en de geassocieerde tabellen in de databank te plaatsen.
-      Hiernaast heb ik ook samen gezeten met iemand anders van mijn groep voor de styling van het project in orde te brengen.
-      Ik ben ook degene die via Combell de website heeft gehost.</span>
+    <p>
+      <span
+        >In dit groepswerk heb ik mij bezig gehouden met het begin te maken voor
+        een agenda waar ze hun dagelijkse routines, taken en afspraken in kunnen
+        plannen en de geassocieerde tabellen in de databank te plaatsen.
+        Hiernaast heb ik ook samen gezeten met iemand anders van mijn groep voor
+        de styling van het project in orde te brengen. Ik ben ook degene die via
+        Combell de website heeft gehost.</span
+      >
     </p>
 
     <h3>Bijgeleerd</h3>
-    <p><span>Uit dit project heb ik meer ervaring om met een planningsbord te werken om zo te vermijden dat meerdere mensen aan hetzelfde bezig zijn. Als ook
-    heb ik hier uit geleerd om samen aan 1 project te werken met een groep.</span>
+    <p>
+      <span
+        >Uit dit project heb ik meer ervaring om met een planningsbord te werken
+        om zo te vermijden dat meerdere mensen aan hetzelfde bezig zijn. Als ook
+        heb ik hier uit geleerd om samen aan 1 project te werken met een
+        groep.</span
+      >
     </p>
   </div>
 
   <div *ngIf="ShowProj4" class="content">
     <h2>Cordova</h2>
-    <p>Deze opdracht is op school gemaakt voor het vak Cordova gegeven door Patrick Verhaert</p>
+    <p>
+      Deze opdracht is op school gemaakt voor het vak Cordova gegeven door
+      Patrick Verhaert
+    </p>
     <div class="row">
-      <img class="col-4" src="assets/screenshot-1637437241533.png" alt="artikelen opgehaald via API">
-      <img class="col-4" src="assets/screenshot-1637437313838.png" alt="artikelen opgehaald via API">
-      <img class="col-4" src="assets/screenshot-1637437280326.png" alt="artikelen opgehaald via API">
+      <img
+        class="col-4"
+        src="assets/screenshot-1637437241533.png"
+        alt="artikelen opgehaald via API"
+      />
+      <img
+        class="col-4"
+        src="assets/screenshot-1637437313838.png"
+        alt="artikelen opgehaald via API"
+      />
+      <img
+        class="col-4"
+        src="assets/screenshot-1637437280326.png"
+        alt="artikelen opgehaald via API"
+      />
     </div>
     <h3>Context</h3>
-    <p><span>De opdracht van cordova was een applicatie maken voor op de gsm te zetten. Ik heb hier gekozen om een applicatie te maken
-      die een aantal nieuwsartikelen ophaalt via een API. Deze artikelen kan je filteren op genre en op specifieke woorden die in de titel voorkomen.
-      De opdracht moest ook voldoen aan een aantal eisen en de belangrijkste hiervan was voor een plug-in
-      in de applicatie bij te plaatsen. De plug-in die ik gekozen heb kan connecteren met social media en zo kon ik iets posten via mijn applicatie.</span>
+    <p>
+      <span
+        >De opdracht van cordova was een applicatie maken voor op de gsm te
+        zetten. Ik heb hier gekozen om een applicatie te maken die een aantal
+        nieuwsartikelen ophaalt via een API. Deze artikelen kan je filteren op
+        genre en op specifieke woorden die in de titel voorkomen. De opdracht
+        moest ook voldoen aan een aantal eisen en de belangrijkste hiervan was
+        voor een plug-in in de applicatie bij te plaatsen. De plug-in die ik
+        gekozen heb kan connecteren met social media en zo kon ik iets posten
+        via mijn applicatie.</span
+      >
     </p>
 
     <h3>Bijgeleerd</h3>
-    <p><span>Bij dit project heb ik voor het eerst kennis gemaakt met het framework material, voorheen gebruikte we altijd bootstrap dus dit
-    was ook eens leuk voor mee te werken.</span>
+    <p>
+      <span
+        >Bij dit project heb ik voor het eerst kennis gemaakt met het framework
+        material, voorheen gebruikte we altijd bootstrap dus dit was ook eens
+        leuk voor mee te werken.</span
+      >
+    </p>
+  </div>
+
+  <div *ngIf="ShowProj5" class="content">
+    <h2>Project 4.0</h2>
+    <p>
+      Deze opdracht is op school & bij Elision gemaakt voor het vak Project 4.0
+      begeleid door Bram Heyns
+    </p>
+    <img src="assets/project4.png" alt="webshop" />
+
+    <h3>Context</h3>
+    <p>
+      <span>
+        Voor het bedrijf Elision hebben we een statische headless e-commerce
+        website gemaakt voor kleine tot middelgrote bedrijven, in in plaats van
+        standaard e-commerce functionaliteit om te voldoen aan de behoeften van
+        het bedrijf, met behulp van het react-framework Next.js in in combinatie
+        met een Java backend en Microservices. Dit zorgt ervoor dat bedrijven
+        kunnen inspelen op de steeds veranderende dynamische markt van van
+        vandaag. Hier moesten we ook Adyen gebruiken voor het betalingssysteem
+        en Contentful voor het uploaden van onze content die we vervolgens
+        konden ophalen en weergeven op onze front-end. Tot slot hadden we ook
+        een algolia-implementatie voor het tonen van resultaten in de zoekbalk.
+      </span>
+    </p>
+
+    <h3>Mijn Bijdrage</h3>
+    <p>
+      <span
+        >Voordat het project begon, onderzochten we de verschillende
+        technologieën van Elision die we moesten gebruiken. Hier maakten ik en
+        mijn collega van applicatieontwikkeling een use case en een
+        databasemodel. We maakten ook figma-prototypes als wireframes. In dit
+        groepswerk hield ik me bezig met de web-applicatie. Ik heb voornamelijk
+        gewerkt met next.js en Contentful. Ik heb de styling gemaakt en de
+        applicatie volledig verbonden via Contentful. aangesloten via
+        Contentful. De verschillende pagina's zoals home, categorie, detail,
+        login, winkelwagen, FAQ, header en footer.
+      </span>
+    </p>
+
+    <h3>Bijgeleerd</h3>
+    <p>
+      <span
+        >In dit project werkte ik voornamelijk met het framework next.js en
+        gebruikte ik voor het eerst het CMS Contentful, verder werkten we ook
+        met bitbucket en jira in plaats van github en trello. Van dit project
+        heb ik geleerd om samen te werken met mensen die gespecialiseerd zijn in
+        het opzetten van infrastructuur en AI. We volgden hier ook meer business
+        en hielden dagelijkse scrum meetings en aan het einde van onze
+        wekelijkse sprint hielden we een retrospective.</span
+      >
     </p>
   </div>
 </div>

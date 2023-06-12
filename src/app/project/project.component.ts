@@ -11,6 +11,7 @@ export class ProjectComponent implements OnInit {
   ShowProj2:boolean=false
   ShowProj3:boolean=false
   ShowProj4:boolean=false
+  ShowProj5:boolean=false
   constructor() { }
 
   ngOnInit(): void {
@@ -19,6 +20,7 @@ export class ProjectComponent implements OnInit {
     this.ShowProj2=false
     this.ShowProj3=false
     this.ShowProj4=false
+    this.ShowProj5=false
     if (!this.ShowProj1) {
       this.ShowProj1=!this.ShowProj1
     }
@@ -28,6 +30,7 @@ export class ProjectComponent implements OnInit {
     this.ShowProj1=false
     this.ShowProj3=false
     this.ShowProj4=false
+    this.ShowProj5=false
     if(!this.ShowProj2) {
       this.ShowProj2=!this.ShowProj2
     }
@@ -37,6 +40,7 @@ export class ProjectComponent implements OnInit {
     this.ShowProj2=false
     this.ShowProj1=false
     this.ShowProj4=false
+    this.ShowProj5=false
     if(!this.ShowProj3) {
       this.ShowProj3=!this.ShowProj3
     }
@@ -46,8 +50,19 @@ export class ProjectComponent implements OnInit {
     this.ShowProj2=false
     this.ShowProj1=false
     this.ShowProj3=false
+    this.ShowProj5=false
     if(!this.ShowProj4) {
       this.ShowProj4=!this.ShowProj4
+    }
+  }
+
+  ToggleTag5() {
+    this.ShowProj2=false
+    this.ShowProj1=false
+    this.ShowProj3=false
+    this.ShowProj4=false
+    if(!this.ShowProj5) {
+      this.ShowProj5=!this.ShowProj5
     }
   }
 
