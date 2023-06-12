@@ -11,7 +11,7 @@ const routes: Routes = [
   {path: 'introduction', component: IntroductionComponent},
   {path: 'internship', component: InternshipComponent},
   {path: '', redirectTo: '/introduction', pathMatch: 'full' },
-  {path: '**', redirectTo: '/introduction', pathMatch: 'full' }
+  // {path: '**', redirectTo: '/introduction', pathMatch: 'full' }
 
 
 ];

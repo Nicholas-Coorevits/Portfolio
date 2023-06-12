@@ -17,17 +17,48 @@
   font-family: inherit;}
 
 #about_image {
-  max-width: 50%;
+  padding: 0;
+  margin-right: 5px;
+  max-width: 49%;
+  object-fit: contain;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 650px) {
+#iframe {
+  margin-top: 20px;
+  width: 600px;
+  height: 315px;
+}
+
+#intro_image {
+  padding:0;
+  margin-bottom: 15px;
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 724px) {
   #about_image {
+    margin: 0;
     justify-content: center;
     max-width: 100%;
   }
 
   #about_list {
     display: none;
+  }
+
+  #iframe {
+    width: 400px;
+    height:225px;
+  }
+  #intro_image {
+    margin: 0;
+    justify-content: center;
+    max-width: 100%;
   }
 
   .logo {
