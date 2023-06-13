@@ -30,6 +30,23 @@
   height: 315px;
 }
 
+#skill_list {
+  list-style: none;
+}
+
+#skill_list li::before {
+  content: "\2605";
+  color: #96b2e0;
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1em;
+}
+
+#skill_list li p::before {
+  margin-bottom: 5px;
+}
+
 #intro_image {
   padding:0;
   margin-bottom: 15px;
